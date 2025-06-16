@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Paradise - Figurines Manga & Anime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🎌 Otaku Paradise</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#products" class="nav-link">Figurines</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-main">Otaku Paradise</span>
+                <span class="title-sub">オタクパラダイス</span>
+            </h1>
+            <p class="hero-description">
+                Découvrez la plus grande collection de figurines manga et anime de qualité premium
+            </p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Voir les Figurines</a>
+                <a href="#collections" class="btn btn-secondary">Collections Exclusives</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Figurines</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Séries</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Authentiques</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Figurines Populaires</span>
+                <span class="title-decoration"></span>
+            </h2>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="naruto">Naruto</button>
+                <button class="filter-btn" data-filter="onepiece">One Piece</button>
+                <button class="filter-btn" data-filter="dragonball">Dragon Ball</button>
+                <button class="filter-btn" data-filter="demonslayer">Demon Slayer</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="naruto">
+                    <div class="product-image">
+                        <img src="images/naruto-placeholder.svg" alt="Naruto Sage Mode Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Uzumaki Naruto - Sage Mode</h3>
+                        <p class="product-series">Naruto Shippuden</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(127)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">89,99€</span>
+                            <span class="price-old">109,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="onepiece">
+                    <div class="product-image">
+                        <img src="images/onepiece-placeholder.svg" alt="Luffy Gear 4 Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Monkey D. Luffy - Gear 4</h3>
+                        <p class="product-series">One Piece</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">125,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dragonball">
+                    <div class="product-image">
+                        <img src="images/dragonball-placeholder.svg" alt="Goku Ultra Instinct Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Son Goku - Ultra Instinct</h3>
+                        <p class="product-series">Dragon Ball Super</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">149,99€</span>
+                            <span class="price-old">179,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="demonslayer">
+                    <div class="product-image">
+                        <img src="images/demonslayer-placeholder.svg" alt="Tanjiro Kamado Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tanjiro Kamado - Hinokami Kagura</h3>
+                        <p class="product-series">Demon Slayer</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">95,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="naruto">
+                    <div class="product-image">
+                        <img src="images/naruto-placeholder.svg" alt="Sasuke Uchiha Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Uchiha Sasuke - Rinnegan</h3>
+                        <p class="product-series">Naruto Shippuden</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">105,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="onepiece">
+                    <div class="product-image">
+                        <img src="images/onepiece-placeholder.svg" alt="Roronoa Zoro Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Roronoa Zoro - Santoryu</h3>
+                        <p class="product-series">One Piece</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">115,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="demonslayer">
+                    <div class="product-image">
+                        <img src="images/demonslayer-placeholder.svg" alt="Zenitsu Agatsuma Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Zenitsu Agatsuma - Thunder Breathing</h3>
+                        <p class="product-series">Demon Slayer</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(134)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">87,99€</span>
+                            <span class="price-old">99,99€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dragonball">
+                    <div class="product-image">
+                        <img src="images/dragonball-placeholder.svg" alt="Vegeta Prince Figurine" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vegeta - Ultra Ego</h3>
+                        <p class="product-series">Dragon Ball Super</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(198)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">139,99€</span>
+                            <span class="price-old">159,99€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Collections Exclusives</span>
+                <span class="title-decoration"></span>
+            </h2>
+            
+            <div class="collections-grid">
+                <div class="collection-card large">
+                    <div class="collection-bg premium-bg"></div>
+                    <div class="collection-content">
+                        <h3>Collection Premium</h3>
+                        <p>Figurines de haute qualité avec détails exceptionnels</p>
+                        <a href="#" class="btn btn-light">Découvrir</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-bg limited-bg"></div>
+                    <div class="collection-content">
+                        <h3>Éditions Limitées</h3>
+                        <p>Pièces rares et exclusives</p>
+                        <a href="#" class="btn btn-light">Voir</a>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-bg new-bg"></div>
+                    <div class="collection-content">
+                        <h3>Nouveautés</h3>
+                        <p>Dernières sorties manga</p>
+                        <a href="#" class="btn btn-light">Explorer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="title-text">Notre Passion</span>
+                        <span class="title-decoration"></span>
+                    </h2>
+                    <p class="about-description">
+                        Depuis plus de 10 ans, Otaku Paradise est votre destination privilégiée pour les figurines manga et anime authentiques. 
+                        Nous sélectionnons avec soin chaque pièce pour offrir à nos clients des produits de la plus haute qualité.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Authenticité Garantie</h4>
+                            <p>Toutes nos figurines sont 100% authentiques et officielles</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Livraison Rapide</h4>
+                            <p>Expédition sécurisée en 24-48h partout en France</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Service Client</h4>
+                            <p>Une équipe passionnée à votre écoute 7j/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-placeholder">
+                        <i class="fas fa-store"></i>
+                        <p>Notre Boutique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Contactez-nous</span>
+                <span class="title-decoration"></span>
+            </h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Rue de l'Anime<br>75000 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@otakuparadise.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun-Sam : 10h-19h<br>Dimanche : 14h-18h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Sujet">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎌 Otaku Paradise</h3>
+                    <p>Votre boutique spécialisée en figurines manga et anime de qualité premium.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#products">Figurines</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="#">Naruto</a></li>
+                        <li><a href="#">One Piece</a></li>
+                        <li><a href="#">Dragon Ball</a></li>
+                        <li><a href="#">Demon Slayer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Restez informé de nos nouveautés et offres exclusives</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otaku Paradise. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,80 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="demonslayerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="fireGrad" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ff4500;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b0000;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="glowDS">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#demonslayerGrad)"/>
+  
+  <!-- Fire circle background -->
+  <circle cx="200" cy="125" r="85" fill="url(#fireGrad)" opacity="0.6"/>
+  
+  <!-- Stylized Demon Slayer figure -->
+  <g transform="translate(200,125)" filter="url(#glowDS)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="25" fill="#ffcc99"/>
+    <!-- Hair -->
+    <path d="M-20,-50 L-10,-60 L0,-55 L10,-60 L20,-50 L15,-40 L-15,-40 Z" fill="#8b0000" />
+    <!-- Forehead scar -->
+    <rect x="-3" y="-40" width="6" height="12" fill="#8b0000" rx="3"/>
+    <!-- Body -->
+    <rect x="-15" y="-5" width="30" height="40" fill="#000000" rx="5"/>
+    <!-- Checkered pattern -->
+    <rect x="-12" y="-2" width="6" height="6" fill="#228b22"/>
+    <rect x="-6" y="-2" width="6" height="6" fill="#000000"/>
+    <rect x="0" y="-2" width="6" height="6" fill="#228b22"/>
+    <rect x="6" y="-2" width="6" height="6" fill="#000000"/>
+    <rect x="-12" y="4" width="6" height="6" fill="#000000"/>
+    <rect x="-6" y="4" width="6" height="6" fill="#228b22"/>
+    <rect x="0" y="4" width="6" height="6" fill="#000000"/>
+    <rect x="6" y="4" width="6" height="6" fill="#228b22"/>
+    <!-- Arms -->
+    <rect x="-25" y="0" width="10" height="25" fill="#ffcc99" rx="5"/>
+    <rect x="15" y="0" width="10" height="25" fill="#ffcc99" rx="5"/>
+    <!-- Sword -->
+    <rect x="22" y="-10" width="3" height="30" fill="#c0c0c0"/>
+    <rect x="20" y="-12" width="7" height="4" fill="#8b4513"/>
+    <!-- Legs -->
+    <rect x="-10" y="35" width="8" height="25" fill="#000000" rx="4"/>
+    <rect x="2" y="35" width="8" height="25" fill="#000000" rx="4"/>
+  </g>
+  
+  <!-- Fire effects -->
+  <g opacity="0.4">
+    <!-- Flames -->
+    <path d="M50 200 Q60 180 55 160 Q65 150 70 180 Q80 170 75 190 Q85 185 80 200" fill="#ff4500"/>
+    <path d="M320 80 Q330 60 325 40 Q335 30 340 60 Q350 50 345 70 Q355 65 350 80" fill="#ff6600"/>
+    <path d="M30 100 Q40 80 35 60 Q45 50 50 80 Q60 70 55 90 Q65 85 60 100" fill="#ff8c00"/>
+    
+    <!-- Water breathing pattern -->
+    <path d="M80 125 Q120 100 160 125 Q200 150 240 125 Q280 100 320 125" 
+          stroke="#00bfff" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M60 140 Q100 115 140 140 Q180 165 220 140 Q260 115 300 140" 
+          stroke="#4169e1" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Wisteria petals -->
+  <g opacity="0.3">
+    <ellipse cx="100" cy="70" rx="3" ry="6" fill="#9370db" transform="rotate(45 100 70)"/>
+    <ellipse cx="300" cy="160" rx="3" ry="6" fill="#9370db" transform="rotate(30 300 160)"/>
+    <ellipse cx="150" cy="40" rx="3" ry="6" fill="#dda0dd" transform="rotate(60 150 40)"/>
+    <ellipse cx="250" cy="200" rx="3" ry="6" fill="#dda0dd" transform="rotate(20 250 200)"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">DEMON SLAYER COLLECTION</text>
+</svg> 
